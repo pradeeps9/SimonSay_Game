@@ -1,0 +1,113 @@
+body{
+  text-align: center;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: cursive;
+  background-color:  rgba(102, 0, 128, 0.591);
+ 
+}
+
+.gameTiles{
+  margin: auto;
+  width: 550px;
+  height: 550px;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.tile {
+  width: 49%;
+  height: 49%;
+  border: 3px solid black;
+}
+
+.green {
+  /* background-color: green; */
+  background: rgb(39,255,0);
+  background: linear-gradient(308deg, rgba(39,255,0,1) 0%, rgb(21, 82, 0) 60%);
+  border-top-left-radius: 100%;
+}
+
+/** green flash */
+.f1{
+  background: rgb(39,255,0);
+}
+
+.blue {
+  /* background-color: blue; */
+  background: rgb(0,207,255);
+  background: linear-gradient(45deg, rgba(0,207,255,1) 0%, rgba(10,10,124,1) 60%);
+  border-top-right-radius: 100%;
+}
+
+/** blue flash */
+.f2{
+  background: rgb(0,207,255);
+}
+
+.yellow {
+  /* background-color: yellow; */
+  background: rgb(255,243,0);
+  background: linear-gradient(225deg, rgba(255,243,0,1) 0%, rgb(83, 86, 0) 60%);
+  border-bottom-left-radius: 100%;
+}
+
+/** yellow flash */
+.f3{
+  background: rgb(255,243,0);
+}
+
+.red {
+  /* background-color: red; */
+  background: rgb(255,0,0);
+  background: linear-gradient(135deg, rgb(255, 0, 0) 0%, rgb(81, 0, 0) 60%);
+  border-bottom-right-radius: 100%;
+}
+
+/** red flash */
+.f4{
+  background: rgb(255, 0, 0);
+}
+
+#scoreBoard{
+  width: 130px;
+  height: 130px;
+  background-color: darkslategray;
+  border-radius: 100%;
+  position: absolute;
+  top: 330px;
+  border: 3px solid black;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  
+  
+}
+
+.gameover{
+  transition: 0.5s;
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+/** CSS for app.js */
+/* .flash{
+  background: white;
+} */
+
+
+
